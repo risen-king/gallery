@@ -34,13 +34,13 @@ module.exports = {
         //inline:    path.join(__dirname , "/src/script/inline.js"),
     },
     output: {
-        path: path.join(__dirname, "/build"),//打包后的文件存放的地方
+        path: path.join(__dirname, "/dist"),//打包后的文件存放的地方
         filename: "js/[name]-[hash].js",//打包后输出文件的文件名
         publicPath:"", //上线地址 http://cdn.com
     },
     devtool: 'eval-source-map',
     devServer: {
-        contentBase: "./build",//本地服务器所加载的页面所在的目录
+        contentBase: "./dist",//本地服务器所加载的页面所在的目录
         port: "8080",
         historyApiFallback:true,//不跳转
         inline:true, //实时刷新
